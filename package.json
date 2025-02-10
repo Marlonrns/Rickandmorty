@@ -1,0 +1,23 @@
+{
+  "name": "rickandmortys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/generate.js && npx webpack serve --config webpack.config.cjs --mode development",
+    "build": "node src/generate.js && npx webpack --config webpack.config.cjs --mode production"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.84.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
